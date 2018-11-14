@@ -45,8 +45,9 @@
 }
 ```
 
-程式碼：[]()
-頁面：[]()
+程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex01/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex01/index.html)
+
+頁面：[https://gqsm.gitlab.io/csslayout/Ch01/ex01/index.html](https://gqsm.gitlab.io/csslayout/Ch01/ex01/index.html)
 
 
 #### 2.水平排列列表
@@ -86,7 +87,8 @@
 }
 ```
 
-程式碼：[]()
-頁面：[]()
+程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex02/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex02/index.html)
+
+頁面：[https://gqsm.gitlab.io/csslayout/Ch01/ex01/index.html](https://gqsm.gitlab.io/csslayout/Ch01/ex01/index.html)
 
 3. 
