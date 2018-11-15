@@ -34,12 +34,14 @@
         background-color:#061d5e;
     }
     ```
-    >>>
-    備註說明：
-    * `position`的預設屬性是`static`，在此屬性下無法控制位置。
-    * 可將值給`top`、`left`、`bottom`、`right`設定間隔距離，
-    * 間隔以頁面的左上角為基準點。
-    >>>
+
+>>>
+備註說明：
+* `position`的預設屬性是`static`，在此屬性下無法控制位置。
+* 可將值給`top`、`left`、`bottom`、`right`設定間隔距離，
+* 間隔以頁面的左上角為基準點。
+>>>
+    
 4. 設定外層下方`div`的`position`屬性，並將他移動位置，設定寬高背景顏色
     ```css
     #out_block_bottom{
@@ -162,10 +164,10 @@
         background-color: #000000;
     }
     ```
-    >>>
-    備註說明：
-    * 當`position`設定為`sticky`時，`width`會預設為父元素的寬度。
-    >>>
+>>>
+備註說明：
+* 當`position`設定為`sticky`時，`width`會預設為父元素的寬度。
+>>>
 
 4. 為內層下方的`div`設定寬高及背景顏色
     ```css
