@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <style>
+        #out_block {
+            height: 2000px;
+        }
+
+        #menu_block {
+            position: sticky;
+            top: 0px;
+            padding: 15px;
+            background-color: #000000;
+        }
+        
+        #menu_block ul{
+            float: right;
+        }
+
+        .menu_list {
+            float: left;
+            margin-right: 20px;
+            list-style-type: none;
+        }
+
+        .menu_list a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        #clearfix {
+            clear: both;
+        }
+
+        #list_block {
+            width: 690px;
+            margin: auto;
+        }
+
+        .list {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="out_block">
+        <div id="menu_block">
+            <ul>
+                <li class="menu_list">
+                    <a href="#">選單1</a>
+                </li>
+                <li class="menu_list">
+                    <a href="#">選單2</a>
+                </li>
+            </ul>
+            <div id="clearfix"></div>
+        </div>
+        <div id="list_block">
+            <div class="list">
+                區塊一
+            </div>
+            <div class="list">
+                區塊二
+            </div>
+            <div class="list">
+                區塊三
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

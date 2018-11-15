@@ -100,10 +100,10 @@
 <nav>
     <a hred="#">選單</a>
     <ul>
-        <li>首頁</li>
-        <li>關於我們</li>
-        <li>歷史沿革</li>
-        <li>聯絡我們</li>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">歷史沿革</a></li>
+        <li><a href="#">聯絡我們</a></li>
     </ul>
 </nav>
 ```
@@ -131,6 +131,10 @@ a{
 程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex03/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex03/index.html)
 
 頁面：[https://gqsm.gitlab.io/csslayout/Ch01/ex03/index.html](https://gqsm.gitlab.io/csslayout/Ch01/ex03/index.html)
+
+## 下方為因設置`float`導致外層`div`跑版可使用之解決方式，可以需求做使用
+
+---
 
 #### 4.搭配`overflow`的`hidden`使用
 1. 創建外層和內層的`div`
@@ -167,7 +171,7 @@ a{
 
 頁面：[https://gqsm.gitlab.io/csslayout/Ch01/ex04/index.html](https://gqsm.gitlab.io/csslayout/Ch01/ex04/index.html)
 
-#### 5.搭配`clear`使用`float`
+#### 5.搭配`clear`的`both`使用
 1. 創建外層和兩個內層`div`
 ```html
 <div id="out_block">
@@ -210,3 +214,34 @@ a{
 程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex05/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex05/index.html)
 
 頁面：[https://gqsm.gitlab.io/csslayout/Ch01/ex05/index.html](https://gqsm.gitlab.io/csslayout/Ch01/ex05/index.html)
+
+#### 6. 搭配`display`的`table`使用
+1. 創建內外層`div`
+```html
+<div id="out_block">
+    <div id="in_block">
+    </div>
+</div>
+```
+2. 為內層`div`設定`float`和寬高、背景顏色
+```css
+#in_block{
+    float:left;
+    width:100px;
+    height:100px;
+    background-color:#ffffff;
+}
+```
+3. 為外層`div`設定`display`、背景顏色及內邊距
+```css
+#out_block{
+    display:table;
+    padding:10px;
+    background-color:#000000;
+}
+```
+>>>
+備註說明
+* 藉由`display`屬性的`table`值可讓外層的`div`依據內層`float`的`div`大小調整寬高。
+* `display`的`flow-root`也能做到，但只能把高度撐開，寬度不受影響。
+>>>
