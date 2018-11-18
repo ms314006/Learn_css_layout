@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <style>
+        #menu_block {
+            background-color: #000000;
+        }
+
+        #menu_block ul {
+            float: right;
+        }
+
+        .menu_list {
+            float: left;
+            padding: 15 50 15 0;
+            list-style-type: none;
+            position: relative;
+        }
+
+        .menu_list:hover ul{
+            display: block;
+        }  
+
+        .menu_list a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .menu_list ul {
+            position: absolute;
+            display: none;
+            background-color: #00000050;
+            top:35px;
+            left: -30px;
+            width:100%;
+            padding: 10px;
+        }  
+
+        .menu_sub_list{
+            width: 100%;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu_block">
+        <ul>
+            <li class="menu_list">
+                <a href="#">選單1</a>
+                <ul>
+                    <li class="menu_sub_list">
+                        <a href="#">選單1-1</a>
+                    </li>
+                    <li class="menu_sub_list">
+                        <a href="#">選單1-2</a>
+                    </li>
+                    <li class="menu_sub_list">
+                        <a href="#">選單1-3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu_list">
+                <a href="#">選單2</a>
+                <ul>
+                    <li class="menu_sub_list">
+                        <a href="#">選單2-1</a>
+                    </li>
+                    <li class="menu_sub_list">
+                        <a href="#">選單2-2</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div id="clearfix"></div>
+    </div>
+</body>
+
+</html>

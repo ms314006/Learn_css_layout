@@ -245,3 +245,7 @@
 * 藉由`display`屬性的`table`值可讓外層的`div`依據內層`float`的`div`大小調整寬高。
 * `display`的`flow-root`也能做到，但只能把高度撐開，寬度不受影響。
 >>>
+
+程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex06/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch01/ex06/index.html)
+
+頁面：[https://gqsm.gitlab.io/csslayout/Ch01/ex06/index.html](https://gqsm.gitlab.io/csslayout/Ch01/ex06/index.html)
