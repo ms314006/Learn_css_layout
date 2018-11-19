@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <style>
+        #out_block {
+            display: flex;
+
+            /*(3)垂直自動填滿高度(需取消item高度設定)，水平置中對齊*/
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .item {
+            border: 1px solid #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="out_block">
+        <div class="item" >項目一</div>
+        <div class="item" style="height:100px">項目二</div>
+        <div class="item" style="height:60px">項目三</div>
+    </div>
+</body>
+
+</html>
