@@ -411,7 +411,7 @@
 >>>
 備註說明：
 * 這裡選擇使用`padding`是因為他可以使`li`的寬度依內容將寬度撐開。
-* `position`設定`relative`是為了讓浮動以該`li`的位置為基準點。
+* `position`設定`relative`是為了讓子選單以該`li`的位置為基準點。
 >>>
 5. 由於內部的`ul`選單設定`float`，外層`menu_block`的高度將不會被撐開，因此在選單下增加一個`div`並設置`clear`屬性
     ```html
