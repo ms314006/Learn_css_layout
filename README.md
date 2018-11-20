@@ -16,7 +16,7 @@ Learn CSS layout.
     * [`position` 的基本用法](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#1-position-%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-relative-%E7%AF%87)
         * [`relative` 篇](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#1-position-%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-relative-%E7%AF%87)
         * [`absolute` 篇](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#2-position-%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-absolute-%E7%AF%87)
-        * [``fixed` 篇](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#3-position-%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-fixed-%E7%AF%87)
+        * [`fixed` 篇](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#3-position-%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-fixed-%E7%AF%87)
         * [`sticky` 篇](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#4-position-%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-sticky-%E7%AF%87)
     * [`position` 實際運用](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#5-position-%E5%AF%A6%E9%9A%9B%E9%81%8B%E7%94%A8-%E6%8D%B2%E5%8B%95%E5%9B%BA%E5%AE%9A%E9%81%B8%E5%96%AE)
         * [捲動固定選單](https://gitlab.com/GQSM/csslayout/tree/master/Ch02#5-position-%E5%AF%A6%E9%9A%9B%E9%81%8B%E7%94%A8-%E6%8D%B2%E5%8B%95%E5%9B%BA%E5%AE%9A%E9%81%B8%E5%96%AE)
