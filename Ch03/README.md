@@ -184,7 +184,7 @@
 
 頁面：[https://gqsm.gitlab.io/csslayout/Ch03/ex03/index.html](https://gqsm.gitlab.io/csslayout/Ch03/ex03/index.html)
 
-#### 4.基本用法-內層填滿區塊
+#### 4.基本用法-內層區塊設定
 
 ---
 
