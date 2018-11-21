@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <style>
+        #out_block {
+            display: flex;
+            width: 600px;
+            height: 300px;
+            border: 1px solid #0000FF;
+        }
+
+        .item {
+            flex-basis: 400px;
+        }
+
+        .item:nth-child(1) {
+            background-color: #00ff00;
+            flex-shrink: 1;
+        }
+
+        .item:nth-child(2) {
+            background-color: #0000ff;
+            flex-shrink: 2;
+        }
+
+        .item:nth-child(3) {
+            background-color: #ff0000;
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="out_block">
+        <div class="item">項目一</div>
+        <div class="item">項目二</div>
+        <div class="item">項目三</div>
+    </div>
+</body>
+
+</html>

@@ -183,3 +183,153 @@
 程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch03/ex03/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch03/ex03/index.html)
 
 頁面：[https://gqsm.gitlab.io/csslayout/Ch03/ex03/index.html](https://gqsm.gitlab.io/csslayout/Ch03/ex03/index.html)
+
+#### 4.基本用法-內層填滿區塊
+
+---
+
+1. 創建外層與內層三個 `div` 做列表
+    ```html
+    <div id="out_block">
+        <div class="item">項目一</div>
+        <div class="item">項目二</div>
+        <div class="item">項目三</div>
+    </div>
+    ```
+2. 替外層 `div` 增加寬高、框線和 `flex` 屬性
+    ```css
+    #out_block {
+        display: flex;
+        width: 600px;
+        height: 300px;
+        border: 1px solid #0000FF;
+    }
+    ```
+3. 為內層的每個項目 `div` 個別設定背景顏色
+    ```css
+    .item:nth-child(1) {
+        background-color: #00ff00;
+    }
+    .item:nth-child(2) {
+        background-color: #0000ff;
+    }
+    .item:nth-child(3) {
+        background-color: #ff0000;
+    }
+    ```
+>>>
+備註說明：
+1. `:nth-child(i)` 為 `CSS3` 中的新屬性。能夠指定第 `i` 個符合的元素增加 `CSS` 樣式。
+>>>
+4. 替內層 `div` 用 `flex-basis` 寬度 100px ，並增加 `flex-grow` 屬性。
+    ```css
+    .item {
+        flex-basis :100px;
+        flex-grow :1;
+    }
+    ```
+>>>
+備註說明：
+1. 在 `flex` 的 `div` 下寬度 `width` 與 `flex-basis` 同時存在時會以 `flex-basis` 優先。
+2. `flex-grow` 會在元素的寬度無法填滿 `div` 時，按比例填滿剩餘區塊。
+>>>
+5. 可將 `flex-grow` 個別設置在內層元素上，以查看差別
+    ```css
+    .item:nth-child(1) {
+        background-color: #00ff00;
+        flex-grow: 1;
+    }
+    .item:nth-child(2) {
+        background-color: #0000ff;
+        flex-grow: 2;
+    }
+    .item:nth-child(3) {
+        background-color: #ff0000;
+        flex-grow: 3;
+    }
+    ```
+>>>
+備註說明：
+1. `flex-grow` 是填滿區塊，相反的屬性是 `flex-shrink` 他會在寬度超過外層區塊時，自動收縮成區塊大小，比例設置的越大，會被縮放得越多。
+>>>
+
+下方程式碼為使用與 `flex-grow` 相反的 `flex-shrink` 。
+
+程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch03/ex04/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch03/ex04/index.html)
+
+頁面：[https://gqsm.gitlab.io/csslayout/Ch03/ex04/index.html](https://gqsm.gitlab.io/csslayout/Ch03/ex04/index.html)
+
+#### 5.滑動展開列表
+
+---
+
+1. 創建外層與內層三個 `div` 做列表
+    ```html
+    <div id="out_block">
+        <div class="item">項目一</div>
+        <div class="item">項目二</div>
+        <div class="item">項目三</div>
+    </div>
+    ```
+2. 替外層 `div` 增加寬高、框線和 `flex` 屬性
+    ```css
+    #out_block {
+        display: flex;
+        width: 600px;
+        height: 300px;
+        border: 1px solid #0000FF;
+    }
+    ```
+3. 為內層的每個項目 `div` 個別設定背景顏色
+    ```css
+    .item:nth-child(1) {
+        background-color: #00ff00;
+    }
+    .item:nth-child(2) {
+        background-color: #0000ff;
+    }
+    .item:nth-child(3) {
+        background-color: #ff0000;
+    }
+    ```
+4. 在內層 `div` 用 `flex` 同時設定 `flex-basis` 寬度及 `flex-grow` 延展比例。
+    ```css
+    .item {
+        flex :1 0 50px;
+    }
+    ```
+>>>
+備註說明：
+* `flex` 擁有三個值
+    * 第一個為 `flex-grow`
+    * 第二個為 `flex-shrink`
+    * 第三個為 `flex-basis` 
+>>>
+5. 用 `hover` 設定當滑鼠移到 `item` 上時，將寬度增加至 500px 
+    ```css
+    .item:hover {
+        flex-basis: 500px;
+    }
+    ```
+6. 在寬度變動時，使用 `transition` 添加過場動畫
+    ```css
+    .item {
+        flex: 1 0 50px;
+        transition: flex-basis 0.5s;
+    }
+
+    .item:hover {
+        flex-basis: 500px;
+        transition: flex-basis 0.5s;
+    }
+    ```
+>>>
+備註說明：
+*  `transition` 帶有兩個參數
+    * 第一個為產生變化效果的屬性。
+    * 第二個為動畫時間。
+>>>
+
+程式碼：[https://gitlab.com/GQSM/csslayout/blob/master/Ch03/ex05/index.html](https://gitlab.com/GQSM/csslayout/blob/master/Ch03/ex05/index.html)
+
+頁面：[https://gqsm.gitlab.io/csslayout/Ch03/ex05/index.html](https://gqsm.gitlab.io/csslayout/Ch03/ex05/index.html)
